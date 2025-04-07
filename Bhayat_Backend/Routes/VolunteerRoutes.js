@@ -1,6 +1,6 @@
 import express from "express";
 import Volunteer from "../Models/Volunteer.js";
-import bcrypt from "bcrypt";
+import bcrypt from 'bcryptjs';
 import fs from "fs";
 import path from "path";
 import multer from "multer";
