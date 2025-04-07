@@ -83,24 +83,24 @@ const Explore_Cause = () => {
                 </p>
 
                 {/* Share Buttons */}
-                <div className="flex justify-center gap-4 mt-4">
+                 <div className="flex justify-center gap-4 mt-4">
                   <button
                     onClick={() => handleShare('facebook', shareLink)}
-                    className="text-blue-600 hover:text-blue-800 text-xl"
+                    className="text-blue-600 bg-gray-200 hover:bg-gray-300 hover:text-blue-800 text-xl"
                     title="Share on Facebook"
                   >
                     <FaFacebook />
                   </button>
                   <button
                     onClick={() => handleShare('whatsapp', shareLink)}
-                    className="text-green-500 hover:text-green-700 text-xl"
+                    className="text-green-500 bg-gray-200 hover:bg-gray-300 hover:text-green-700 text-xl"
                     title="Share on WhatsApp"
                   >
                     <FaWhatsapp />
                   </button>
                   <button
                     onClick={() => handleShare('instagram', shareLink)}
-                    className="text-pink-500 hover:text-pink-700 text-xl"
+                    className="text-pink-500 bg-gray-200 hover:bg-gray-300 hover:text-pink-700 text-xl"
                     title="Copy link for Instagram"
                   >
                     <FaInstagram />
