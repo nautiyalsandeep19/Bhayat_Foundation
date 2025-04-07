@@ -1,0 +1,123 @@
+  /*************** FORM ***************/
+  
+  .form-container {
+      max-width: 400px;
+      margin: 100px auto;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+    
+    h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    label {
+      font-size: 14px;
+      margin-bottom: 5px;
+      color: #333;
+    }
+    
+    input[type="text"], input[type="email"], input[type="tel"] {
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    
+    .phone-group {
+      display: flex;
+      align-items: center;
+    }
+    
+    
+    .phone-group input {
+      flex: 1;
+      border-radius: 0 4px 4px 0;
+    }
+    
+    .checkbox-group {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    
+    .checkbox-group input {
+      margin-right: 10px;
+    }
+    
+    small {
+      font-size: 12px;
+      color: #666;
+      margin-bottom: 10px;
+    }
+    
+    button {
+      padding: 10px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+    
+    }
+    #donate-button{
+      margin-top: 30px;
+      border-radius: 3px;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    
+    @media (max-width: 480px) {
+      .form-container {
+        padding: 15px;
+      }
+    
+      button {
+        font-size: 14px;
+      }
+    }
+
+
+
+
+
+/* Popup styling with transition effect */
+.popup {
+  opacity: 0;
+  transform: translateY(-20px); /* Start position off-screen */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  text-align: center;
+}
+
+/* Popup with transition to show */
+.popup.show {
+  opacity: 1; /* Fade in */
+  transform: translate(-50%, -115%); /* Bring to the center */
+}
+
+#donate_main_div{
+  height: 85vh;
+}

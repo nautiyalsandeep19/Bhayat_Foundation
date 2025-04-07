@@ -1,0 +1,138 @@
+*{
+    font-family: poppins ,sans-serif;
+  }
+  /* General Reset */
+  body, html {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: poppins ,sans-serif;
+  }
+  
+  .mybody{
+      background-color: rgb(255,255,255);
+  }
+  /* Header and Navbar */
+  .header {
+      width: 100%;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      position:sticky;
+      top: 0;
+      z-index: 1000;
+     
+  }
+  
+  .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.8rem 1.5rem;
+  }
+  
+  .nav-logo {
+      max-height: 80px;
+      margin-left: 20px;
+      max-width: 100%;
+  }
+  
+  .nav-menu {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  }
+  
+  .nav-item .nav-link {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      font-size: 18px;
+      transition: color 0.3s ease;
+     padding-top: 13px;
+  
+  }
+  
+  .nav-item .donate {
+      background-color: gray;
+      color: white;
+      padding: 8px;
+      border-radius: 50px;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-right: 20px;
+      margin-top: 10px;
+      font-size: 12px;
+  }
+  
+  .nav-item .donate:hover {
+    color: #1b1b1b;
+    background-color: green;
+    cursor: pointer;
+  }
+
+  #donate{
+    background-color: black;
+    color: white;
+  }
+
+  #donate:hover{
+    background-color: rgb(87, 78, 78);
+    color: white;
+  }
+  .nav-item .nav-link:hover{
+      color: grey;
+      cursor: pointer;
+  }
+  
+  .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 0.3rem;
+      cursor: pointer;
+  }
+  
+  .hamburger .bar {
+      height: 3px;
+      width: 25px;
+      background-color: #333;
+      border-radius: 3px;
+  }
+  /* Responsive Styles */
+  @media (max-width: 840px) {
+      .nav-menu {
+          display: none;
+          flex-direction: column;
+          gap: 1rem;
+          position: absolute;
+          top: 60px;
+          right: 1.5rem;
+          background-color: white;
+          padding: 1rem;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          border-radius: 8px;
+      }
+  
+      .nav-menu.active{
+          display: flex;
+      }
+  
+      .hamburger {
+          display: flex;
+          margin-right: 20px;
+      }
+  
+      .crousalseconddiv h1 {
+          font-size: 1.5rem;
+      }
+  
+      .crousalseconddiv h2 {
+          font-size: 1rem;
+      }
+  
+      .crousalseconddiv button {
+          font-size: 0.9rem;
+      }
+  }
+  
