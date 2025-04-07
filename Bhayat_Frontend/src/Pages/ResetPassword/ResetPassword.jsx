@@ -8,13 +8,14 @@ const ResetPassword = () => {
   const token = searchParams.get('token');
   const [newPassword, setNewPassword] = useState('');
   const [loading, setLoading] = useState(false);
+  const url = import.meta.env.VITE_BACKEND_HOST_URL;
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
     
     try {
-      await axios.post('http://localhost:1000/api/user/reset-password', {
+      await axios.post(`${url}/api/user/reset-password`, {
         token,
         newPassword
       });

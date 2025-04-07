@@ -9,6 +9,7 @@ const Donate = () => {
 
   const donationData = fundraiser || cause;
   const donationId = fundraiser ? fundraiser._id : cause ? cause._id : null;
+  const url = import.meta.env.VITE_BACKEND_HOST_URL;
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -24,7 +25,7 @@ const Donate = () => {
     };
 
     try {
-      const response = await fetch('http://localhost:1000/api/donate', {
+      const response = await fetch(`${url}/api/donate`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
@@ -50,7 +51,7 @@ const Donate = () => {
       {donationData && (
         <div className="w-full md:w-1/2 p-4 bg-white shadow-lg rounded-lg flex flex-col items-start border border-gray-200">
           <img
-            src={`http://localhost:1000/uploads/${fundraiser ? 'RecentFundPhoto' : 'causePhoto'}/${donationData.image}`}
+            src={`${url}/uploads/${fundraiser ? 'RecentFundPhoto' : 'causePhoto'}/${donationData.image}`}
             alt={donationData.name}
             className="w-full h-56 md:h-64 object-cover rounded-lg mb-4 shadow-md"
           />

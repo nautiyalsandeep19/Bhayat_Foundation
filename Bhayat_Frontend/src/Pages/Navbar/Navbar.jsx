@@ -14,7 +14,6 @@ import { assets } from "../../myassets";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [userDropdown, setUserDropdown] = useState(false);
-  const [shareDropdown, setShareDropdown] = useState(false);
   const { user, logout } = useContext(AuthContext);
   const navigate = useNavigate();
   const shareUrl = window.location.href;

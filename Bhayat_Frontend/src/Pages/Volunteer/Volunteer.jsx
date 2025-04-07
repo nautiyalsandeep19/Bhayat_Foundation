@@ -27,6 +27,7 @@ const Volunteer = () => {
   });
 
   const navigate = useNavigate();
+  const url = import.meta.env.VITE_BACKEND_HOST_URL;
 
   // 🔥 Get logged-in user data from AuthContext
   const { user } = useContext(AuthContext);
@@ -152,7 +153,7 @@ const Volunteer = () => {
     formData.append("image", selectedFile);
   
     try {
-      const response = await axios.post("http://localhost:1000/api/volunteer/register", formData, {
+      const response = await axios.post(`${url}/api/volunteer/register`, formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
   
