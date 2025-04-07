@@ -143,18 +143,18 @@ const Navbar = () => {
           {/* Share section for mobile */}
           <div>
             <p className="text-sm mb-2">Share:</p>
-            <div className="flex gap-4">
+            <div className="flex gap-4 items-center">
               <FacebookShareButton url={shareUrl}>
                 <FacebookIcon size={32} round />
               </FacebookShareButton>
               <WhatsappShareButton url={shareUrl}>
                 <WhatsappIcon size={32} round />
               </WhatsappShareButton>
-              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="mt-2">
                 <img
                   src="https://cdn-icons-png.flaticon.com/512/174/174855.png"
                   alt="Instagram"
-                  className="w-8 h-8"
+                  className="w-7 h-7 "
                 />
               </a>
             </div>
