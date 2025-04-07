@@ -186,21 +186,21 @@ const Programs = () => {
                 <div className="flex justify-center gap-4 mb-4 ">
                   <button
                     onClick={() => handleShare('facebook', `${window.location.origin}/programs/fundraiser/${fundraiser._id}`)}
-                    className="text-blue-600 hover:text-blue-800"
+                    className="text-blue-600 hover:text-blue-800 bg-gray-200 hover:bg-gray-300"
                     title="Share on Facebook"
                   >
                     <FaFacebook />
                   </button>
                   <button
                     onClick={() => handleShare('whatsapp', `${window.location.origin}/programs/fundraiser/${fundraiser._id}`)}
-                    className="text-green-500 hover:text-green-700"
+                    className="text-green-500 hover:text-green-700 bg-gray-200 hover:bg-gray-300"
                     title="Share on WhatsApp"
                   >
                    <FaWhatsapp />
                   </button>
                   <button
                     onClick={() => handleShare('instagram')}
-                    className="text-pink-500 hover:text-pink-700"
+                    className="text-pink-500 hover:text-pink-700 bg-gray-200 hover:bg-gray-300"
                     title="Share on Instagram"
                   >
                     <FaInstagram />
