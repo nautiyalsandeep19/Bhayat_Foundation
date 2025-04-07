@@ -5,7 +5,7 @@ import User from '../Models/UserSignup.js';
 import Volunteer from '../Models/Volunteer.js';
 import crypto from 'crypto';
 import nodemailer from 'nodemailer';
-import bcrypt from 'bcrypt';
+import bcrypt from 'bcryptjs';
 import dotenv from 'dotenv';
 
 dotenv.config(); // Load environment variables
