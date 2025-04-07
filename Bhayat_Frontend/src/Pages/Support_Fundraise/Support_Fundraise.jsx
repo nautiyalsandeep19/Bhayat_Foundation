@@ -52,15 +52,16 @@ const Support_Fundraise = () => {
     <div className="px-6 py-10">
       <h2 className="text-4xl font-bold text-center mb-6 pb-5">Current Fundraisers :</h2>
 
-      <div className="grid grid-cols-1 m-auto sm:grid-cols-2 lg:grid-cols-3 gap-6 main_support_div w-[90%] h-fit">
+      <div className="grid grid-cols-1 m-auto sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full lg:w-[90%] h-fit">
         {fundraisers.length > 0 ? (
           fundraisers.map((fundraiser) => {
             const shareLink = `${window.location.origin}/programs/fundraiser/${fundraiser._id}`;
             return (
               <div
-                key={fundraiser._id}
-                className="bg-white w-[90%] rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:-translate-y-2 group relative"
-              >
+  key={fundraiser._id}
+  className="bg-white w-full sm:w-full rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:-translate-y-2 group relative"
+>
+
                 {/* Image Section */}
                 <div className="relative">
                   <img
