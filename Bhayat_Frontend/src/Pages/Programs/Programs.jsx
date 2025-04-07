@@ -107,29 +107,29 @@ const Programs = () => {
               <p className="text-gray-600 text-center mb-4 line-clamp-2 flex-grow">{cause.description}</p>
 
               {/* Share Buttons */}
-              <div className="flex justify-center gap-4 mb-4">
+               <div className="flex justify-center gap-4 mb-4">
   <button
     onClick={() => handleShare('facebook', `${window.location.origin}/programs/cause/${cause._id}`)}
-    className="text-blue-600 hover:text-blue-800 text-xl"
+    className="text-blue-600 hover:text-blue-800 text-xl bg-gray-200 hover:bg-gray-300"
     title="Share on Facebook"
   >
     <FaFacebook />
   </button>
   <button
     onClick={() => handleShare('whatsapp', `${window.location.origin}/programs/cause/${cause._id}`)}
-    className="text-green-500 hover:text-green-700 text-xl"
+    className="text-green-500 hover:text-green-700 text-xl bg-gray-200 hover:bg-gray-300"
     title="Share on WhatsApp"
   >
     <FaWhatsapp />
   </button>
   <button
     onClick={() => handleShare('instagram')}
-    className="text-pink-500 hover:text-pink-700 text-xl"
+    className="text-pink-500 hover:text-pink-700 text-xl bg-gray-200 hover:bg-gray-300"
     title="Instagram (Copy link manually)"
   >
     <FaInstagram />
   </button>
-</div>
+             </div>
 
 
               <button
